@@ -11,43 +11,55 @@
 </head>
 <body>
   <h1>Datenschutzerklärung für Klarsicht</h1>
-  <p><strong>Stand: September 2026</strong></p>
+  <p><strong>Stand: 28. September 2026 · Gilt für Klarsicht ab Version 0.3.17</strong></p>
 
-  <h2>1. Verantwortlicher</h2>
-  <p>Oliver Kirschner<br>VektorNull<br>[Anschrift wird vor Veröffentlichung ergänzt]<br><a href="mailto:info@vektornull.de">info@vektornull.de</a></p>
+  <h2>1. Verantwortlicher und Kontakt</h2>
+  <p>Oliver Kirschner · VektorNull<br>[Anschrift wird vor Veröffentlichung ergänzt]<br>E-Mail: <a href="mailto:info@vektornull.de">info@vektornull.de</a></p>
 
-  <h2>2. Allgemeines</h2>
-  <p>Klarsicht ist eine Wetter-App zur übersichtlichen Darstellung von Wettervorhersagen und Polleninformationen. Die App verwendet keine Benutzerkonten, keine Werbung und keine Analyse- oder Trackingdienste.</p>
-  <p>Für die Bereitstellung der Wetterinformationen werden Daten von externen Wetter- und Geodatendiensten abgerufen.</p>
+  <h2>2. Umfang und Zwecke</h2>
+  <p>Klarsicht zeigt Wettervorhersagen, Stationsmesswerte und Polleninformationen. Es gibt keine Benutzerkonten, Werbenetzwerke oder eingebundenen Analyse- und Trackingdienste. Der Entwickler betreibt keinen eigenen Server für Standort- oder Nutzungsdaten. Für Wetter- und Ortssuchen verbindet sich die App direkt mit den unten genannten Diensten. Die Empfänger erhalten dabei technisch bedingt die öffentliche IP-Adresse und weitere Verbindungsdaten.</p>
 
-  <h2>3. Standortdaten</h2>
-  <p>Klarsicht kann den Standort des Geräts verwenden, um automatisch Wetterinformationen für den aktuellen Aufenthaltsort anzuzeigen. Hierfür fragt die App nach der Standortberechtigung des Geräts. Bei erteilter Berechtigung können genaue Standortkoordinaten (Breiten- und Längengrad) verarbeitet werden.</p>
-  <p>Die Standortdaten werden insbesondere verwendet, um Wettervorhersagen für den aktuellen Standort abzurufen, einen Ortsnamen zu bestimmen und passende Polleninformationen auszuwählen. Die Standortberechtigung kann über die Android-Einstellungen jederzeit geändert oder entzogen werden.</p>
+  <h2>3. Freiwillige Nutzung des ungefähren Standorts</h2>
+  <p>Vor der ersten automatischen Standortabfrage informiert die App über die Verwendung und fragt nach Ihrer Einwilligung. Anschließend wird die Android-Berechtigung für den ungefähren Standort angefragt. Klarsicht fordert ausschließlich ACCESS_COARSE_LOCATION an, keine Berechtigung für den genauen Standort oder für Standortzugriffe im Hintergrund. Die Genauigkeit wird vom Android-System bestimmt; die App fordert keinen hochgenauen Standort an.</p>
+  <p>Die ungefähren Koordinaten werden an Open-Meteo für Vorhersagen und an Bright Sky für Stationsmesswerte gesendet. Der Android-Geocoder kann sie zur Bestimmung eines Ortsnamens an den auf Ihrem Gerät eingerichteten Geocoding-Dienst übertragen. Die Auswahl der Pollenregion erfolgt lokal auf dem Gerät.</p>
+  <p>Bei aktiver automatischer Standortwahl wird die Position beim Öffnen beziehungsweise Zurückkehren in die App und während der sichtbaren Nutzung frühestens nach 30 Minuten erneut geprüft. Android darf eine bis zu zehn Minuten alte Position liefern. Stationsmesswerte können während der sichtbaren Nutzung alle zehn Minuten anhand der ausgewählten Koordinaten aktualisiert werden. Die App erstellt keinen Bewegungsverlauf.</p>
+  <p>Rechtsgrundlage der einwilligungsbasierten Standortverarbeitung ist Art. 6 Abs. 1 Buchst. a DSGVO. Soweit der Zugriff auf Informationen des Endgeräts eine Einwilligung nach § 25 Abs. 1 TDDDG erfordert, umfasst die Einwilligung auch diesen Zugriff.</p>
 
-  <h2>4. Wetterdaten – Open-Meteo</h2>
-  <p>Für Wettervorhersagen verwendet Klarsicht Dienste von Open-Meteo. Hierzu werden insbesondere die geografischen Koordinaten des ausgewählten oder automatisch bestimmten Standorts an Open-Meteo übertragen. Bei API-Aufrufen fallen technisch erforderliche Verbindungsdaten, insbesondere die IP-Adresse, an.</p>
-  <p>Anbieter: OpenMeteo GmbH, Hintere Schilligmatte 6, 6463 Bürglen (UR), Schweiz.</p>
+  <h2>4. Ablehnung und Widerruf</h2>
+  <p>Mit „Ort selbst wählen“ können Sie die automatische Standortnutzung ablehnen und die App mit einer manuellen Ortssuche oder gespeicherten Favoriten verwenden. Sie können Ihre Einwilligung jederzeit über „Standort ausschalten“ in der App widerrufen. Danach werden keine neuen automatischen Standortabfragen oder darauf beruhenden Wetteraktualisierungen gestartet; die aktive Geräteposition wird aus der Anzeige und dem Arbeitsspeicherzustand der App entfernt. Bereits übermittelte Anfragen lassen sich nicht zurückholen. Bewusst gespeicherte Favoriten bleiben bestehen und können einzeln entfernt werden.</p>
+  <p>Zusätzlich können Sie die Standortberechtigung in den Android-App-Einstellungen entziehen. Vor einer erneuten automatischen Standortabfrage prüft Klarsicht diese Berechtigung. Die Rechtmäßigkeit der Verarbeitung bis zum Widerruf bleibt unberührt. Eine erneute Einwilligung ist über „Standort verwenden“ möglich.</p>
 
-  <h2>5. Ortsbestimmung – BigDataCloud</h2>
-  <p>Zur Umwandlung automatisch ermittelter geografischer Koordinaten in einen lesbaren Ortsnamen verwendet Klarsicht den Reverse-Geocoding-Dienst von BigDataCloud. Dabei werden die geografischen Koordinaten an BigDataCloud übertragen. Bei der Verbindung fällt technisch bedingt außerdem die IP-Adresse an.</p>
+  <h2>5. Open-Meteo: Vorhersagen und manuelle Ortssuche</h2>
+  <p>Anbieter: OpenMeteo GmbH, Hintere Schilligmatte 6, 6463 Bürglen (UR), Schweiz. Für Vorhersagen werden die Koordinaten des gewählten Orts oder des freigegebenen ungefähren Gerätestandorts übermittelt. Bei der manuellen Suche werden eingegebene Suchbegriffe auch für Vorschläge an die Geocoding-API gesendet. Die manuelle Ortssuche benötigt keinen Zugriff auf den Gerätestandort.</p>
+  <p>Die verwendeten Wettermodelle stammen unter anderem von DWD, ECMWF, NOAA, UKMO und Météo-France. Die Modellabfragen dieser App gehen an Open-Meteo. Laut dessen Datenschutzhinweisen können Serverprotokolle IP-Adressen und geografische Koordinaten enthalten; die individuellen Protokolle werden nach 90 Tagen gelöscht. Die Schweiz verfügt über einen Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO).</p>
+  <p>Weitere Informationen: <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener noreferrer">Open-Meteo: Nutzungsbedingungen und Datenschutz</a>.</p>
 
-  <h2>6. Polleninformationen</h2>
-  <p>Klarsicht verwendet öffentlich bereitgestellte Pollendaten des Deutschen Wetterdienstes (DWD). Die für die Anzeige geeignete Pollenregion wird in der App anhand des ausgewählten Standorts bestimmt. Hierzu lädt die App den Pollendatensatz des DWD.</p>
+  <h2>6. Bright Sky und Deutscher Wetterdienst: Messwerte und Pollen</h2>
+  <p>Für aktuelle Messwerte ruft Klarsicht die öffentliche API api.brightsky.dev ab. Dabei werden die ausgewählten Koordinaten und die IP-Adresse an Bright Sky übermittelt, um passende DWD-Messstationen zu finden. Bright Sky ist ein eigenständiger Dienst und kein Server des DWD. Projektkontakt laut Anbieter: <a href="mailto:jakob@brightsky.dev">jakob@brightsky.dev</a>; <a href="https://brightsky.dev/" target="_blank" rel="noopener noreferrer">Projektinformationen</a>.</p>
+  <p>Ergänzende Stationsdateien und der allgemeine Pollendatensatz werden direkt von opendata.dwd.de geladen. Anbieter: Deutscher Wetterdienst, Frankfurter Straße 135, 63067 Offenbach. Bei diesen Abrufen werden keine Gerätekoordinaten als Anfrageparameter gesendet; der DWD erhält Verbindungsdaten einschließlich der IP-Adresse sowie bei Stationsdateien die angefragte Stationskennung. Die Pollenregion wird auf dem Gerät zugeordnet. <a href="https://www.dwd.de/DE/service/datenschutz/datenschutz_node.html" target="_blank" rel="noopener noreferrer">Datenschutzhinweise des DWD</a>.</p>
+  <p>Klarsicht legt die Protokollierungs- und Löschfristen dieser externen Dienste nicht fest. Eine konkrete Speicherfrist für API-Verbindungsdaten von Bright Sky ist in den verlinkten Projektinformationen nicht ausgewiesen. Deshalb wird keine sofortige Löschung beim Anbieter zugesichert.</p>
 
-  <h2>7. Favoriten</h2>
-  <p>Nutzer können Orte als Favoriten speichern. Dabei werden Ortsname sowie die zugehörigen geografischen Koordinaten ausschließlich lokal auf dem Gerät gespeichert. Diese Favoritendaten werden von Klarsicht nicht an einen eigenen Server des Entwicklers übertragen und können innerhalb der App wieder entfernt werden.</p>
+  <h2>7. Ortsname über den Android-Geocoder</h2>
+  <p>Der Android-Geocoder ergänzt die ungefähren Koordinaten um einen lesbaren Ortsnamen. Die Wetterabfrage ist davon unabhängig und beginnt sofort. Ist der Dienst nicht verfügbar, antwortet er nicht rechtzeitig oder liefert keinen Namen, zeigt Klarsicht „Aktueller Standort“ an.</p>
+  <p>Der Geocoder ist nicht garantiert offline. Seine Implementierung und sein Anbieter hängen vom Betriebssystem und dem Gerät ab; beispielsweise kann ein Google-Dienst eingebunden sein. Bei einer Netzwerkabfrage können ungefähre Koordinaten und Verbindungsdaten an diesen Systemdienst gelangen. Klarsicht wählt dafür keinen eigenen externen Geocoding-Anbieter und fordert keine zusätzliche Standortgenauigkeit an. Für die Verarbeitung durch den Systemanbieter gelten dessen Datenschutzhinweise, bei Google etwa <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer">Google Datenschutz</a>. Eine ausschließlich lokale Verarbeitung oder eine Verarbeitung ausschließlich in der EU wird nicht zugesichert.</p>
 
-  <h2>8. Tracking, Werbung und Benutzerkonten</h2>
-  <p>Klarsicht verwendet derzeit keine Werbenetzwerke, keine Analyse- oder Trackingdienste und kein eigenes Benutzerkonto. Es erfolgt keine Profilbildung durch den Entwickler.</p>
+  <h2>8. Rechtsgrundlagen weiterer Verarbeitungen</h2>
+  <p>Die Bereitstellung ausdrücklich angeforderter Wetterinformationen für manuell ausgewählte Orte und Favoriten erfolgt nach Art. 6 Abs. 1 Buchst. b DSGVO. Die für diese gewünschte Funktion erforderliche lokale Speicherung von Favoriten und Einstellungen fällt unter § 25 Abs. 2 Nr. 2 TDDDG. Die Speicherung der Einwilligungsentscheidung dient der Umsetzung Ihrer Auswahl und dem Nachweis nach Art. 7 Abs. 1 DSGVO (Art. 6 Abs. 1 Buchst. c DSGVO). Datenschutzanfragen werden zur Erfüllung gesetzlicher Pflichten bearbeitet (Art. 6 Abs. 1 Buchst. c DSGVO); sonstige Supportanfragen auf Grundlage von Art. 6 Abs. 1 Buchst. f DSGVO, mit dem berechtigten Interesse, Ihre Anfrage zu beantworten.</p>
 
-  <h2>9. Datenübertragung</h2>
-  <p>Die Kommunikation mit den verwendeten externen Diensten erfolgt über verschlüsselte HTTPS-Verbindungen. Klarsicht betreibt keinen eigenen Server zur Speicherung von Standort-, Wetter- oder Nutzerdaten.</p>
+  <h2>9. Lokale Speicherung und Löschung</h2>
+  <p>Favoriten mit Ortsnamen und Koordinaten sowie die Einwilligungsentscheidung mit Textversion und Zeitpunkt werden lokal im App-Speicher gespeichert, bis Sie sie entfernen, ändern oder die App-Daten löschen. Es wird dafür kein Benutzerkonto angelegt und kein eigenes Einwilligungsprotokoll an den Entwickler übertragen. Die aktuelle Geräteposition und Wetterdaten werden für die laufende Anzeige im Arbeitsspeicher gehalten. Betriebssystem und WebView können technisch notwendige Zwischenspeicher verwenden. Android-Sicherungen können je nach Geräteeinstellungen App-Daten einschließen.</p>
+  <p>Kontaktanfragen werden nur so lange aufbewahrt, wie dies zur Bearbeitung und zur Erfüllung gesetzlicher Aufbewahrungspflichten erforderlich ist. Für die Speicherung bei externen Empfängern gelten die Angaben in den jeweiligen Abschnitten.</p>
 
-  <h2>10. Kontakt</h2>
-  <p>Fragen zum Datenschutz können per E-Mail an <a href="mailto:info@vektornull.de">info@vektornull.de</a> gerichtet werden.</p>
+  <h2>10. Sicherheit und internationale Übermittlungen</h2>
+  <p>Die von Klarsicht selbst aufgerufenen Wetter- und Such-APIs werden über HTTPS angesprochen. Eine Übermittlung an Anbieter außerhalb des Europäischen Wirtschaftsraums kann zusätzlichen Anforderungen nach Art. 44 ff. DSGVO unterliegen. Bei Open-Meteo gilt der Angemessenheitsbeschluss für die Schweiz. Beim Android-Systemdienst hängen Empfänger, Verarbeitungsorte und gegebenenfalls Transfergarantien von der konkreten Geräteimplementierung ab. Die Einwilligung in die Standortfunktion ist keine pauschale Einwilligung in ungesicherte Drittlandübermittlungen.</p>
 
-  <h2>11. Änderungen dieser Datenschutzerklärung</h2>
-  <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen der App, verwendete Dienste oder rechtliche Anforderungen ändern.</p>
+  <h2>11. Ihre Rechte</h2>
+  <p>Unter den jeweiligen gesetzlichen Voraussetzungen haben Sie das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18) und Datenübertragbarkeit (Art. 20). Einwilligungen können Sie jederzeit für die Zukunft widerrufen (Art. 7 Abs. 3). Bei Verarbeitungen auf Grundlage berechtigter Interessen können Sie aus Gründen Ihrer besonderen Situation Widerspruch einlegen (Art. 21).</p>
+  <p>Sie können sich bei einer Datenschutzaufsichtsbehörde beschweren, insbesondere an Ihrem Wohnort, Arbeitsplatz oder am Ort des vermuteten Verstoßes (Art. 77 DSGVO). Anfragen an den Verantwortlichen richten Sie an info@vektornull.de. Der Entwickler hat keinen direkten Zugriff auf ausschließlich lokal gespeicherte App-Daten. Es findet durch Klarsicht keine automatisierte Entscheidung mit rechtlicher oder vergleichbar erheblicher Wirkung im Sinne von Art. 22 DSGVO statt.</p>
+
+  <h2>12. Öffentliche Informationsseite und Änderungen</h2>
+  <p>Diese Erklärung steht in der App auch offline zur Verfügung. Die öffentliche Informationsseite wird über GitHub Pages bereitgestellt. Beim Aufruf erhält GitHub Verbindungsdaten einschließlich der IP-Adresse. Weitere Informationen: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub-Datenschutzerklärung</a>. Externe Links werden erst nach Ihrem Aufruf geöffnet.</p>
+  <p>Die Erklärung wird angepasst, wenn sich Funktionen, Empfänger oder rechtliche Anforderungen ändern. Ändert sich der Umfang der einwilligungsbasierten Standortverarbeitung, fragt die App erforderlichenfalls erneut nach Ihrer Einwilligung.</p>
 
   <footer><a href="index.html">Zurück zu VektorNull</a></footer>
 </body>
