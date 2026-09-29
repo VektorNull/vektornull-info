@@ -4,21 +4,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Impressum &amp; Rechtliches – VektorNull</title>
-  <meta name="description" content="Impressum und rechtliche Informationen zu VektorNull und Klarsicht.">
+  <meta name="description" content="Impressum und rechtliche Informationen zu VektorNull und den veröffentlichten Apps.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="wrap">
-    <header class="topbar"><a class="brand" href="index.html">VEKTORNULL</a><nav aria-label="Hauptnavigation"><a href="#impressum">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav></header>
+    <header class="topbar">
+      <a class="brand" href="index.html">VEKTORNULL</a>
+      <nav aria-label="Hauptnavigation"><a href="#impressum">Impressum</a><a href="#apps">Apps &amp; Datenschutz</a></nav>
+    </header>
+
     <div class="hero"><img src="vektornull-logo.webp" alt="VektorNull – App Entwicklung" width="2048" height="683"></div>
+
     <main>
-      <div class="intro"><span class="eyebrow">VektorNull · App Entwicklung</span><h1 id="impressum">Impressum &amp; Rechtliches</h1><p>Informationen zum Anbieter und zur App Klarsicht.</p></div>
+      <div class="intro">
+        <span class="eyebrow">VektorNull · App Entwicklung</span>
+        <h1 id="impressum">Impressum &amp; Rechtliches</h1>
+        <p>Zentrale Anbieterinformationen für VektorNull und die unter VektorNull veröffentlichten Apps.</p>
+      </div>
+
       <div class="grid">
-        <section class="card" aria-labelledby="anbieter"><h2 id="anbieter">Anbieterinformationen</h2><p><strong>Oliver Kirschner · VektorNull</strong><br>[Anschrift wird vor Veröffentlichung ergänzt]</p><p>E-Mail: <a href="mailto:info@vektornull.de">info@vektornull.de</a></p></section>
-        <section class="card" aria-labelledby="klarsicht"><a class="banner-link" href="datenschutz.html" aria-label="Zur Datenschutzerklärung von Klarsicht"><img src="klarsicht-banner.webp" alt="Klarsicht – Wetter-App mit Bergpanorama" width="2048" height="683"></a><h2 id="klarsicht">Klarsicht</h2><p>Weiterführende Informationen zur Wetter-App und zur Verarbeitung von Daten.</p><a class="text-link" href="datenschutz.html">Datenschutzerklärung für Klarsicht →</a></section>
+        <section class="card" aria-labelledby="anbieter">
+          <h2 id="anbieter">Anbieterinformationen</h2>
+          <p><strong>Oliver Kirschner · VektorNull</strong><br>[Anschrift wird vor Veröffentlichung ergänzt]</p>
+          <p>E-Mail: <a href="mailto:info@vektornull.de">info@vektornull.de</a></p>
+        </section>
+
+        <section class="card" id="apps" aria-labelledby="apps-title">
+          <h2 id="apps-title">Apps &amp; Datenschutz</h2>
+          <p>Die Anbieterinformationen auf dieser Seite gelten zentral für die Apps von VektorNull. App-spezifische Datenschutzhinweise werden separat bereitgestellt.</p>
+          <h3>Klarsicht</h3>
+          <a class="banner-link" href="datenschutz.html" aria-label="Zur Datenschutzerklärung von Klarsicht"><img src="klarsicht-banner.webp" alt="Klarsicht – Wetter-App mit Bergpanorama" width="2048" height="683"></a>
+          <p><a class="text-link" href="datenschutz.html">Datenschutzerklärung für Klarsicht →</a></p>
+        </section>
       </div>
     </main>
-    <footer class="site-footer"><span>VektorNull · Stand September 2026</span><a href="datenschutz.html">Datenschutz für Klarsicht</a></footer>
+
+    <footer class="site-footer"><span>VektorNull · Stand September 2026</span><a href="#impressum">Impressum</a></footer>
   </div>
 </body>
 </html>
